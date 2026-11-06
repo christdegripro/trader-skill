@@ -1,0 +1,27 @@
+{
+  "tickers": ["AAPL", "AXP", "KO", "BAC", "CVX"],
+  "benchmark": "SPY",
+  "layers": [["macro"], ["secteurs"], ["momentum", "qualite"], ["risque"], ["cio"]],
+  "backend": "mock",
+  "claude_code_model": null,
+  "api_model": "claude-opus-5-5",
+  "api_effort": "medium",
+  "data": {"start": "2024-01-02", "end": "2025-12-31", "feed": "iex"},
+  "splits": {"train_end": "2024-12-31", "validation_end": "2025-06-30", "test_end": "2025-12-31"},
+  "debate_every_n_days": 5,
+  "min_predictions_for_sharpe": 30,
+  "max_position_pct": 25,
+  "cash_buffer_pct": 10,
+  "simulation": {
+    "starting_cash": 100000,
+    "execution_delay_days": 1,
+    "slippage_bps": 5,
+    "fee_bps": 1,
+    "min_fee_usd": 1.0,
+    "min_conviction": 55,
+    "min_trade_usd": 50,
+    "min_days_for_sharpe": 60
+  },
+  "experiments": {"min_train_predictions": 10, "min_validation_predictions": 30},
+  "paper_only": true
+}

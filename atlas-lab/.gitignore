@@ -1,0 +1,6 @@
+config.json
+data/
+runs/
+out/
+__pycache__/
+.env
